@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+
+    <link rel="stylesheet"
+          href="style.css"/>
+
+    <script type="text/javascript"
+            src="http://ajax.aspnetcdn.com/ajax/knockout/knockout-2.2.0.js">
+    </script>
+    <script type="text/javascript"
+            src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js">
+    </script>
+    <script type="text/javascript"
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJbYvufTBKqM4fXCf0fxu9aAyKjx0N010&sensor=true">
+    </script>
+    <script type="text/javascript"
+            src="index.js">
+    </script>
+
+    <title>Create Event</title>
+</head>
+<body>
+<div id="topbit"></div>
+<header>
+    <h1>Create Event</h1>
+    <p>Welcome: please create your event in Glebe...</p>
+</header>
+
+<div id="main-details">
+    <p>Name: <input data-bind="value: name"/></p>
+    <p>Date: <input data-bind="value: date"/></p>
+    <p>Description: <input data-bind="value: description"/></p>
+</div>
+
+<div id="add-event">
+    <p>Click your first destination:</p>
+    <div id="map_canvas" style="width:600px; height:600px"></div>
+
+    <div id="details" data-bind="foreach: places">
+        <div class="detail">
+            <p>Name: <input data-bind="value: name"/></p>
+            <p>Time: <input data-bind="value: time"/></p>
+            <p>Description: <input data-bind="value: description"/></p>
+        </div>
+    </div>
+
+    <button type="submit">Create</button>
+</div>
+
+<footer>
+
+</footer>
+</body>
+</html>
