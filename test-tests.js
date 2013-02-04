@@ -1,7 +1,2 @@
-console.log("hello");
-
-function coolness () {
-	
-	console.log("I am testing some stuff");
-	
-}
+console.log('Hello, world!');
+phantom.exit();
