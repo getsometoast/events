@@ -3,7 +3,7 @@
 	$mongoId = new MongoID($id);
 	
 	// connect
-	$m = new MongoClient("mongodb://jameslewis:14Selassia@ds045557.mongolab.com:45557/event-test");
+	$m = new MongoClient("mongodb://jameslewis:XXXXXXXXXX@ds045557.mongolab.com:45557/event-test");
 	$db = $m->selectDB("event-test");
 	$collection = $db->event;
 	

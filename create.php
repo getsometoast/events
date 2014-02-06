@@ -2,7 +2,7 @@
 	$data = $_POST['data'];
 
 	// connect
-	$m = new MongoClient("mongodb://jameslewis:14Selassia@ds045557.mongolab.com:45557/event-test");
+	$m = new MongoClient("mongodb://jameslewis:XXXXXXXXX@ds045557.mongolab.com:45557/event-test");
 
 	// select a database
 	$db = $m->selectDB("event-test");

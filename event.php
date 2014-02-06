@@ -4,7 +4,7 @@
 	$mongoId = new MongoID($id);
 	
 	// get the data from mongo
-	$m = new MongoClient("mongodb://jameslewis:14Selassia@ds045557.mongolab.com:45557/event-test");
+	$m = new MongoClient("mongodb://jameslewis:XXXXXXXXx@ds045557.mongolab.com:45557/event-test");
 	$db = $m->selectDB("event-test");
 	$collection = $db->event;
 
